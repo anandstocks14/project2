@@ -4,7 +4,6 @@ pipeline{
         stage('build'){
             agent { label ' test1' }
             steps{
-                dir ('project2')
                 sh 'mvn clean package'
                 sh ' ls -lrt'
             }
