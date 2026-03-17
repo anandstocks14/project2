@@ -5,7 +5,7 @@ pipeline{
             agent { label ' test1' }
             steps{
                 dir ('project2')
-                mvn clean package
+                sh 'mvn clean package'
                 sh ' ls -lrt'
             }
         }
