@@ -10,7 +10,7 @@ pipeline {
     }
         post {
             success {
-                archiveArtifacts artifacts: '**/*.war', allowEmptyArchive: false
+                archiveArtifacts artifacts: '**/target/*.war', allowEmptyArchive: false
             }
         }
             
