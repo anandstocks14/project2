@@ -9,8 +9,10 @@ pipeline {
         }
     }
     post {
-            success {
-                build job: 'test3'
+            always {
+                script {
+                    currentBuild.description = "Build #${env.BUILD_NUMBER} | ${currentBuild.currentResult}"
+                }
             }
     }
         
