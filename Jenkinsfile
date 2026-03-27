@@ -8,10 +8,6 @@ pipeline {
             }
         }
     }
-        post {
-            success {
-                archiveArtifacts artifacts: 'target/*.war'
-            }
-        }
+        
             
 }
