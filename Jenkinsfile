@@ -10,7 +10,7 @@ pipeline {
     }
     post {
             success {
-                abuild job: 'test3'
+                build job: 'test3'
             }
     }
         
